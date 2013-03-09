@@ -1,5 +1,10 @@
-﻿@{
+﻿@model Hotelier.ViewModels.HotelCreateViewModel
+@{
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<h2>Tell us about your hotel</h2>
+@using (Html.BeginForm()) {
+  Html.EditorForModel();
+  <input type="submit"/>
+}
